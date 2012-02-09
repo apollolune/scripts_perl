@@ -1,6 +1,10 @@
 #!/usr/bin/perl
 use strict;
 
+# USAGE :
+# echo "some long ... text" | wordcount.pl
+# echo somefile | wordcount.pl
+
 my %count = ();
 while (read(STDIN, $_, 4095) and $_ .= <STDIN>) {
     tr/A-Za-z/ /cs;
