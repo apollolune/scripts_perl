@@ -1,5 +1,9 @@
 #!/usr/bin/perl -w
 ## !/opt/local/bin/perl -w
+
+# sends a mail
+# USAGE : echo "toto" | sendmail.pl
+
 use strict;
 use Carp;
 
@@ -25,7 +29,7 @@ my $message = join(" ", @message);
 my $msg;
 $msg = MIME::Lite->new(
     From    => 'apollolune@gmail.com',
-    To      => 'marc.louis.perso@gmail.com',
+    To      => 'xxxxx@gmail.com',
     Subject => "Task done on $myhost",
 	Data     => $message,
 );
