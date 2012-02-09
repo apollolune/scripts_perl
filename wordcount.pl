@@ -13,3 +13,7 @@ while (read(STDIN, $_, 4095) and $_ .= <STDIN>) {
 	each(%count));
 	print sort { $b cmp $a } @lines;
 
+
+__END__
+
+
